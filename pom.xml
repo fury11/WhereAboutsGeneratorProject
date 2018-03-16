@@ -3,4 +3,18 @@
   <groupId>com.sample.springboot</groupId>
   <artifactId>WhereAboutGenerator</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <build> 
+     <!-- Config: Maven Tomcat Plugin -->
+     <!-- http://mvnrepository.com/artifact/org.apache.tomcat.maven/tomcat7-maven-plugin -->
+   <plugins>
+	 <plugin>
+	    <artifactId>maven-compiler-plugin</artifactId>
+	    <configuration>
+	       <source>1.8</source>
+	       <target>1.8</target>
+	       <skip>true</skip>
+	    </configuration>
+	 </plugin>
+  </plugins>
+  </build>
 </project>
